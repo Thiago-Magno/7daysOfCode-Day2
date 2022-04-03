@@ -9,17 +9,29 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="submit" id="basic-form">
+    <form action="" id="basic-form">
 
         <label for="name">Nome</label>
         <input type="text" id="name" placeholder="Digite o seu nome aqui">
         <label for="age">Idade</label>
         <input type="number" id="age" placeholder="Coloque a sua idade">
         <label for="programLanguage">Estudando</label>
-        <input type="text" id="programLanguage" placeholder="Digite a linguagem de programação que você esta estudando">
+        <input type="text" id="language" placeholder="Digite a linguagem de programação que você esta estudando">
 
+        <button type="submit"  onclick="cadastra() ; Modal.open()" > Cadastrar-se</button>
     </form>
+    
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="input-group actions">
+                <a href="#" onclick="Modal.close()" class="button cancel">X</a>
+                <h2 id="bemVindo"></h2>    
+                
 
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
