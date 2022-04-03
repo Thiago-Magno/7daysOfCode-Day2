@@ -20,9 +20,7 @@ function cadastra() {
   let languages = document.getElementById("language").value;
 
   let showMessage = document.getElementById("bemVindo");
-  let welcome = "Olá " + name +" você tem " + age +
-    " anos de idade e já esta aprendendo " +
-    languages + " !";
+  const welcome = `"Olá ${name}, você tem  ${age} anos de idade e já esta aprendendo ${languages} !"`;
   showMessage.innerHTML = welcome;
 
   console.log(welcome);
